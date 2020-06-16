@@ -1,8 +1,3 @@
-# Adding upper direcotry to PYTHONPATH
-import sys
-
-sys.path.append("..")
-from raidennode import RaidenNode
 import random
 import requests
 import datetime
@@ -11,7 +6,6 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 SESSION_CONNECTION_ID = None
-RAIDEN_PORT = "5005"
 
 # Token that needs to be payed with
 # FIXME We will need to change that Token Adress for our demo
@@ -21,7 +15,8 @@ token = "0x3ed0DaEDC3217615bde34FEDd023bC81ae49251B"
 buyer_address = "0xbD4B4C7155F55F6051A732772589C38480E58F71"
 my_address = "0x5358D52F4a4728d34676454Bdbafd129f0095831"
 # The URL of our Agent
-agent_url = "http://localhost:5020/"
+agent_url = "http://seller_agent:5020"
+raiden_url = "http://raiden:5001"
 
 # A list of possible identifiers
 possible_identifiers = list(range(1, 1000))
@@ -60,7 +55,7 @@ def handle_webhook(dummy):
 
 @app.route("/connect", methods=["GET"])
 def send_invitation():
-    create_invitation = requests.post(f"{agent_url}connections/create-invitation").json()
+    create_invitation = requests.post(f"{agent_url}/connections/create-invitation").json()
     return {"invitation": create_invitation["invitation"]}
 
 
@@ -143,7 +138,7 @@ def is_payed(identifier):
 def process_payment(identifier):
     if identifier in pending_identifiers.keys():
         # Check if we received the payment
-        endpoint = f"http://localhost:{RAIDEN_PORT}/api/v1/payments/{token}"
+        endpoint = f"http://{raiden_url}/api/v1/payments/{token}"
         req = requests.get(endpoint).json()
 
         for payment in req:
@@ -185,11 +180,4 @@ def credits_available(identifier):
 
 # Run the app
 if __name__ == "__main__":
-    raiden = RaidenNode(
-        address=my_address,
-        token=token,
-        api_endpoint=RAIDEN_PORT,
-        keystore="UTC--2020-06-04T11-27-32Z--f87e0e08-3ef5-27ae-1609-17b7aabee4b4"
-    )
-    raiden.start()
     app.run(host="0.0.0.0", port=5000)
