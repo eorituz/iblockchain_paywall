@@ -1,0 +1,22 @@
+# File paths
+keystore-path = '.'
+password-file = './password'
+datadir = "./data-dir"
+
+# Networking
+routing-mode = "pfs"
+api-address = "localhost:5002"
+matrix-server = "https://raidentransport.test001.env.raiden.network"
+pathfinding-service-address = "https://pfs.raidentransport.test001.env.raiden.network"
+
+eth-rpc-endpoint = "http://parity.goerli.ethnodes.brainbot.com:8545"
+network-id = "goerli"
+
+# Mic
+environment-type = "development"
+accept-disclaimer = true
+
+address = "0x5358D52F4a4728d34676454Bdbafd129f0095831
+
+[log-config]
+"raiden" = "ERROR"

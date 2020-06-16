@@ -1,0 +1,108 @@
+Address: 0xbD4B4C7155F55F6051A732772589C38480E58F71
+ action     {
+  type: 'token/monitored',
+  payload: {
+    token: '0x3ed0DaEDC3217615bde34FEDd023bC81ae49251B',
+    tokenNetwork: '0xCe7aC5Ac299225544c7D0Dd3aE266c3e74D110F2'
+  }
+}
+ action     {
+  type: 'channel/monitor',
+  payload: { id: 1 },
+  meta: {
+    tokenNetwork: '0xCe7aC5Ac299225544c7D0Dd3aE266c3e74D110F2',
+    partner: '0x5358D52F4a4728d34676454Bdbafd129f0095831'
+  }
+}
+ action     {
+  type: 'matrix/presence/request',
+  meta: { address: '0x5358D52F4a4728d34676454Bdbafd129f0095831' }
+}
+ action     { type: 'raiden/config/update', payload: {} }
+ action     {
+  type: 'message/global/send',
+  payload: {
+    message: {
+      type: 'PFSFeeUpdate',
+      canonical_identifier: [Object],
+      updating_participant: '0xbD4B4C7155F55F6051A732772589C38480E58F71',
+      timestamp: '2020-06-15T15:40:39',
+      fee_schedule: [Object],
+      signature: '0x3721dab2f7945ea6e0053d110984f9f447f2a3fbf89e0aed78449d2ebb00b1e621fcc2d4db495b2ed0d7275cd1b0b5a70635243dfac81f19ee5951ee18a49b4e1c'
+    }
+  },
+  meta: { roomName: 'raiden_goerli_path_finding' }
+}
+ action     { type: 'block/new', payload: { blockNumber: 2878782 } }
+ action     { type: 'block/new', payload: { blockNumber: 2878782 } }
+ action     {
+  type: 'udc/deposited',
+  payload: BigNumber { _hex: '0x056bc75e2d63100000' }
+}
+ action     {
+  type: 'matrix/setup',
+  payload: {
+    server: 'https://raidentransport.test001.env.raiden.network',
+    setup: {
+      userId: '@0xbd4b4c7155f55f6051a732772589c38480e58f71:raidentransport.test001.env.raiden.network',
+      accessToken: 'MDAzOGxvY2F0aW9uIHJhaWRlbnRyYW5zcG9ydC50ZXN0MDAxLmVudi5yYWlkZW4ubmV0d29yawowMDEzaWRlbnRpZmllciBrZXkKMDAxMGNpZCBnZW4gPSAxCjAwNjljaWQgdXNlcl9pZCA9IEAweGJkNGI0YzcxNTVmNTVmNjA1MWE3MzI3NzI1ODljMzg0ODBlNThmNzE6cmFpZGVudHJhbnNwb3J0LnRlc3QwMDEuZW52LnJhaWRlbi5uZXR3b3JrCjAwMTZjaWQgdHlwZSA9IGFjY2VzcwowMDIxY2lkIG5vbmNlID0gQCZ6Xm1eVS1qOUFVNDguRQowMDJmc2lnbmF0dXJlILXj0zjHVjchVQOE2Psp48CqTUkEF6w_ecyOJtCY14aNCg',
+      deviceId: 'RAIDEN',
+      displayName: '0xde68521190e96cf28309f4dc0524f26ab3ee4122ceb31326ef5b2930a9d81fa518139bddc33632fad6058cf115e0e56690e57678399bfc9f89013f91be8583a81c'
+    }
+  }
+}
+ action     {
+  type: 'matrix/presence/success',
+  payload: {
+    userId: '@0x5358d52f4a4728d34676454bdbafd129f0095831:raidentransport.test001.env.raiden.network',
+    available: true,
+    ts: 1592235639692,
+    caps: { noDelivery: true, webRTC: true }
+  },
+  meta: { address: '0x5358D52F4a4728d34676454Bdbafd129f0095831' }
+}
+ action     {
+  type: 'matrix/presence/success',
+  payload: {
+    userId: '@0x5358d52f4a4728d34676454bdbafd129f0095831:raidentransport.test001.env.raiden.network',
+    available: true,
+    ts: 1592235641160,
+    caps: { noDelivery: true, webRTC: true }
+  },
+  meta: { address: '0x5358D52F4a4728d34676454Bdbafd129f0095831' }
+}
+RTC: got invite 0x5358d52f4a4728d34676454bdbafd129f0095831|0xbd4b4c7155f55f6051a732772589c38480e58f71
+RTC: dataChannel open 0x5358d52f4a4728d34676454bdbafd129f0095831|0xbd4b4c7155f55f6051a732772589c38480e58f71
+ action     {
+  type: 'rtc/channel',
+  payload: RTCDataChannel {
+    _listeners: { close: [Set], error: [Set], open: [Set], message: [Set] }
+  },
+  meta: { address: '0x5358D52F4a4728d34676454Bdbafd129f0095831' }
+}
+ action     { type: 'block/new', payload: { blockNumber: 2878783 } }
+Started: # 2878783 2020-06-15T15:40:47.314Z , balance = 97984562975503000 , took 8189
+Token: 0x3ed0DaEDC3217615bde34FEDd023bC81ae49251B balance = 10099999000000
+ action     {
+  type: 'message/global/send',
+  payload: {
+    message: {
+      type: 'PFSCapacityUpdate',
+      canonical_identifier: [Object],
+      updating_participant: '0xbD4B4C7155F55F6051A732772589C38480E58F71',
+      other_participant: '0x5358D52F4a4728d34676454Bdbafd129f0095831',
+      updating_nonce: [BigNumber],
+      other_nonce: [BigNumber],
+      updating_capacity: [BigNumber],
+      other_capacity: [BigNumber],
+      reveal_timeout: [BigNumber],
+      signature: '0xdceda9626135c377b7c7fba49b381ac1f5fe890b363c667cafd6653f8a725e586e954df4c99e0ae575b5f749e9f1701a1c8ee78561a29200ea35681fd255aa301c'
+    }
+  },
+  meta: { roomName: 'raiden_goerli_path_finding' }
+}
+ action     { type: 'block/new', payload: { blockNumber: 2878784 } }
+ action     { type: 'block/new', payload: { blockNumber: 2878785 } }
+Stopping...
+ action     { type: 'raiden/shutdown', payload: { reason: 'raidenStopped' } }
+Main error: [Error [EmptyError]: no elements in sequence]

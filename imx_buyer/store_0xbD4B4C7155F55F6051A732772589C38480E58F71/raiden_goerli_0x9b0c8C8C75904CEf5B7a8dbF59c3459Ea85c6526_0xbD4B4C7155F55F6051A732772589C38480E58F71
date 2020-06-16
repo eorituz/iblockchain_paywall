@@ -1,0 +1,92 @@
+{
+  "address": "0xbD4B4C7155F55F6051A732772589C38480E58F71",
+  "version": 3,
+  "chainId": 5,
+  "registry": "0x9b0c8C8C75904CEf5B7a8dbF59c3459Ea85c6526",
+  "blockNumber": 2878785,
+  "config": {
+
+  },
+  "channels": {
+    "0x5358D52F4a4728d34676454Bdbafd129f0095831@0xCe7aC5Ac299225544c7D0Dd3aE266c3e74D110F2": {
+      "state": "open",
+      "id": 1,
+      "token": "0x3ed0DaEDC3217615bde34FEDd023bC81ae49251B",
+      "tokenNetwork": "0xCe7aC5Ac299225544c7D0Dd3aE266c3e74D110F2",
+      "settleTimeout": 500,
+      "isFirstParticipant": true,
+      "openBlock": 2838195,
+      "own": {
+        "address": "0xbD4B4C7155F55F6051A732772589C38480E58F71",
+        "deposit": "1000000",
+        "withdraw": "0",
+        "locks": [
+
+        ],
+        "balanceProof": {
+          "chainId": "0",
+          "tokenNetworkAddress": "0x0000000000000000000000000000000000000000",
+          "channelId": "0",
+          "nonce": "0",
+          "transferredAmount": "0",
+          "lockedAmount": "0",
+          "locksroot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "additionalHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "partner": {
+        "address": "0x5358D52F4a4728d34676454Bdbafd129f0095831",
+        "deposit": "0",
+        "withdraw": "0",
+        "locks": [
+
+        ],
+        "balanceProof": {
+          "chainId": "0",
+          "tokenNetworkAddress": "0x0000000000000000000000000000000000000000",
+          "channelId": "0",
+          "nonce": "0",
+          "transferredAmount": "0",
+          "lockedAmount": "0",
+          "locksroot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "additionalHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      }
+    }
+  },
+  "oldChannels": {
+
+  },
+  "tokens": {
+    "0x3ed0DaEDC3217615bde34FEDd023bC81ae49251B": "0xCe7aC5Ac299225544c7D0Dd3aE266c3e74D110F2"
+  },
+  "transport": {
+    "server": "https://raidentransport.test001.env.raiden.network",
+    "setup": {
+      "userId": "@0xbd4b4c7155f55f6051a732772589c38480e58f71:raidentransport.test001.env.raiden.network",
+      "accessToken": "MDAzOGxvY2F0aW9uIHJhaWRlbnRyYW5zcG9ydC50ZXN0MDAxLmVudi5yYWlkZW4ubmV0d29yawowMDEzaWRlbnRpZmllciBrZXkKMDAxMGNpZCBnZW4gPSAxCjAwNjljaWQgdXNlcl9pZCA9IEAweGJkNGI0YzcxNTVmNTVmNjA1MWE3MzI3NzI1ODljMzg0ODBlNThmNzE6cmFpZGVudHJhbnNwb3J0LnRlc3QwMDEuZW52LnJhaWRlbi5uZXR3b3JrCjAwMTZjaWQgdHlwZSA9IGFjY2VzcwowMDIxY2lkIG5vbmNlID0gQCZ6Xm1eVS1qOUFVNDguRQowMDJmc2lnbmF0dXJlILXj0zjHVjchVQOE2Psp48CqTUkEF6w_ecyOJtCY14aNCg",
+      "deviceId": "RAIDEN",
+      "displayName": "0xde68521190e96cf28309f4dc0524f26ab3ee4122ceb31326ef5b2930a9d81fa518139bddc33632fad6058cf115e0e56690e57678399bfc9f89013f91be8583a81c"
+    },
+    "rooms": {
+      "0x5358D52F4a4728d34676454Bdbafd129f0095831": [
+        "!bahjdlxPqoXHFpaKvJ:raidentransport.test001.env.raiden.network",
+        "!xkntgzBQhJgoUxLqIw:raidentransport.test001.env.raiden.network"
+      ]
+    }
+  },
+  "sent": {
+
+  },
+  "received": {
+
+  },
+  "iou": {
+
+  },
+  "pendingTxs": [
+
+  ]
+}
